@@ -17,9 +17,8 @@ NovaZoom is a modern video conferencing tool built with the latest technologies 
 ## ⚙️ Tech Stack used
 
 - **Frontend:** Next.js, TypeScript, Tailwind CSS
-- **Backend:** Node.js, Express.js
 - **Authentication:** Clerk
-- **Real-time Features:** getstream 
+- **Video Comunication:** getstream 
 - **UI Components:** shadcn
 
 ## 📌 Live Site URL: <a href="https://nova-zoom.vercel.app/">**Visit Now** 🚀</a>
