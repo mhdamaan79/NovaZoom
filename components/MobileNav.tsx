@@ -32,9 +32,10 @@ const MobileNav = () => {
           <Link href="/" className="flex items-center gap-1">
             <Image
               src="/icons/logo.svg"
-              width={32}
-              height={32}
+              width={48}
+              height={48}
               alt="novazoom logo"
+              className="-mr-2"
             />
             <p className="text-[26px] font-extrabold text-white">NOVAZOOM</p>
           </Link>
@@ -59,8 +60,8 @@ const MobileNav = () => {
                         <Image
                           src={item.imgUrl}
                           alt={item.label}
-                          width={20}
-                          height={20}
+                          width={28}
+                          height={28}
                         />
                         <p className="font-semibold">{item.label}</p>
                       </Link>

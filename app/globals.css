@@ -88,6 +88,12 @@
   color: white;
 }
 
+.cl-logoImage {
+  height: 120px !important; /* or your desired height */
+  width: auto !important; /* or set a specific width if you want */
+  max-width: 120% !important;
+  display: block;
+}
 /* =============================== */
 
 @layer utilities {
