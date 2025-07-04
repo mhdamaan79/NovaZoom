@@ -31,11 +31,11 @@ const MobileNav = () => {
         <SheetContent side="left" className="border-none bg-dark-1">
           <Link href="/" className="flex items-center gap-1">
             <Image
-              src="/icons/logo.svg"
-              width={48}
-              height={48}
+              src="/icons/logo.png"
+              width={64}
+              height={64}
               alt="novazoom logo"
-              className="-mr-2"
+              className="w-24 -ml-5 -mr-6"
             />
             <p className="text-[26px] font-extrabold text-white">NOVAZOOM</p>
           </Link>
