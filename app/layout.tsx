@@ -32,7 +32,7 @@ export default function RootLayout({
       }}
     >
       <html lang="en">
-        <body className={`${inter.className} bg-dark-2`}>
+        <body className={`${inter.className} bg-white-2`}>
           {/* <Toaster /> */}
           {children}
         </body>

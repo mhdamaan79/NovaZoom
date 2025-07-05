@@ -21,28 +21,28 @@ const MeetingTypeList = () => {
         title="New Meeting"
         description="Start and instant meeting"
         handleClick={() => setMeetingState("isInstantMeeting")}
-        className="bg-orange-1"
+        className="bg-orange-gradient"
       />
       <HomeCard
         imgPath="/icons/schedule.svg"
         title="Schedule Meeting"
         description="Plan your meeting"
         handleClick={() => setMeetingState("isScheduleMeeting")}
-        className="bg-blue-1"
+        className="bg-blue-gradient"
       />
       <HomeCard
         imgPath="/icons/recordings.svg"
         title="View Recordings"
         description="Check out your recordings"
         handleClick={() => router.push("/recordings")}
-        className="bg-purple-1"
+        className="bg-purple-gradient"
       />
       <HomeCard
         imgPath="/icons/join-meeting.svg"
         title="Join Meeting"
         description="Via invitation link"
         handleClick={() => setMeetingState("isJoiningMeeting")}
-        className="bg-yellow-1"
+        className="bg-yellow-gradient"
       />
 
       <MeetingModal
