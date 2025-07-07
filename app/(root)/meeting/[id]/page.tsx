@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const Meeting = ({ params: { id } }: { params: { id: string } }) => {
   const { user, isLoaded } = useUser();
-  const [isSetupComplete, setIsStupComplete] = useState(false);
+  const [isSetupComplete, setIsSetupComplete] = useState(false);
   const { call, isCallLoading } = useGetCallById(id);
 
   if (!isLoaded || isCallLoading) return <Loader />;
@@ -19,7 +19,7 @@ const Meeting = ({ params: { id } }: { params: { id: string } }) => {
     <div className="h-screen w-full">
       <StreamCall call={call}>
         <StreamTheme>
-          {!isSetupComplete ? <MeetingSetup /> : <MeetinRoom />}
+          {!isSetupComplete ? <MeetingSetup setIsSetupComplete={setIsSetupComplete} /> : <MeetinRoom />}
         </StreamTheme>
       </StreamCall>
     </div>

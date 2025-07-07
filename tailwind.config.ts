@@ -35,6 +35,7 @@ const config = {
           2: "#3175FF",
           3: "#80A2FF",
           4: "#FFFFFF",
+          5: "#3870FF",
         },
         sky: {
           1: "#C9DDFF",

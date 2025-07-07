@@ -25,7 +25,10 @@ const Sidebar = () => {
               key={link.label}
               className={cn(
                 "flex flex-row items-center justify-start px-4 py-7 rounded-lg",
-                { "bg-blue-1": isActive }
+                {
+                  "bg-blue-1 border-4 border-gray-200 drop-shadow-lg ":
+                    isActive,
+                }
               )}
             >
               <Link
