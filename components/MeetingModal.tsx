@@ -45,9 +45,11 @@ const MeetingModal = ({
               <Image src={imgPath} alt="image" width={72} height={72} />
             </div>
           )}
-          <h1 className={cn("text-3xl font-bold leading-[42px]", className)}>
+          <DialogTitle
+            className={cn("text-3xl font-bold leading-[42px]", className)}
+          >
             {title}
-          </h1>
+          </DialogTitle>
           {children}
           <Button
             className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0"

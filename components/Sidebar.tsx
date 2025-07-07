@@ -22,6 +22,7 @@ const Sidebar = () => {
           return (
             <Button
               variant="secondary"
+              key={link.label}
               className={cn(
                 "flex flex-row items-center justify-start px-4 py-7 rounded-lg",
                 { "bg-blue-1": isActive }
