@@ -1,14 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import {
   DeviceSettings,
   VideoPreview,
   useCall,
   useCallStateHooks,
-} from "@stream-io/video-react-sdk";
+} from '@stream-io/video-react-sdk';
 
-import Alert from "./Alert";
-import { Button } from "./ui/button";
+import Alert from './Alert';
+import { Button } from './ui/button';
 
 const MeetingSetup = ({
   setIsSetupComplete,
@@ -27,7 +27,7 @@ const MeetingSetup = ({
 
   if (!call) {
     throw new Error(
-      "useStreamCall must be used within a StreamCall component."
+      'useStreamCall must be used within a StreamCall component.',
     );
   }
 
@@ -60,7 +60,7 @@ const MeetingSetup = ({
     );
 
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center gap-3 text-white">
+    <div className="flex h-screen w-full flex-col items-center justify-center gap-3 text-dark-1">
       <h1 className="text-center text-2xl font-bold">Setup</h1>
       <VideoPreview />
       <div className="flex h-16 items-center justify-center gap-3">
@@ -75,7 +75,7 @@ const MeetingSetup = ({
         <DeviceSettings />
       </div>
       <Button
-        className="rounded-md bg-green-500 px-4 py-2.5"
+        className="rounded-md bg-green-500 px-4 py-2.5 text-white"
         onClick={() => {
           call.join();
 

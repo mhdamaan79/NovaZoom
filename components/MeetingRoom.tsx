@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MeetinRoom = () => {
+const MeetingRoom = () => {
   return (
     <div>MeetinRoom</div>
   )
 }
 
-export default MeetinRoom
+export default MeetingRoom
