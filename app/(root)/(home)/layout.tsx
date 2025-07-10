@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "NovaZoom",
+  description: "Video Calling App",
+  icons: {
+    icon: "/icons/logo.png",
+  },
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
