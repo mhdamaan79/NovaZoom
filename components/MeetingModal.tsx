@@ -37,8 +37,40 @@ const MeetingModal = ({
 }: MeetingModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogTrigger>Open</DialogTrigger>
-      <DialogContent className="flex w-full max-w-[520px] flex-col gap-6 border-none bg-stone-200 px-6 py-9 text-black">
+      <DialogContent
+        className="flex w-full max-w-[520px] flex-col gap-6 border-none bg-white px-6 py-9 text-black"
+        showCloseButton={false}
+      >
+        <button
+          type="button"
+          aria-label="Close"
+          onClick={onClose}
+          className="
+    absolute top-4 right-4
+    rounded-full
+    bg-red-500
+    hover:bg-red-600
+    transition-colors
+    opacity-90
+    hover:opacity-100
+    p-2
+    focus:ring-2 focus:ring-red-300 focus:outline-none
+  "
+        >
+          <svg
+            viewBox="0 0 16 16"
+            fill="none"
+            className="w-4 h-4 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 4L12 12M12 4L4 12"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
         <div className="flex flex-col gap-6">
           {imgPath && (
             <div className="flex justify-center">

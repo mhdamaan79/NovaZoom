@@ -64,13 +64,19 @@ const MeetingTypeList = () => {
       toast("Meeting Created");
     } catch (error) {
       console.error(error);
-      toast("Failed to create Meeting");
+      toast("Failed to create Meeting", {
+        style: {
+          background: "#f8d7da", // light red/pink
+          color: "#721c24", // dark red text
+          border: "1px solid #f5c6cb",
+        },
+      });
     }
   };
 
   if (!client || !user) return <Loader />;
 
-  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetail?.id}`
+  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetail?.id}`;
 
   return (
     <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -111,18 +117,18 @@ const MeetingTypeList = () => {
           handleClick={createMeeting}
         >
           <div className="flex flex-col gap-2.5">
-            <label className="text-base text-normal leading-[22px] text-dark-1">
+            <label className="text-base text-normal leading-[22px] text-black">
               Add a description
             </label>
             <Textarea
-              className="border-none bg-slate-50 focus-visible:ring-0 focus-visible:ring-offset-0"
+              className="border-none bg-slate-100 focus-visible:ring-0 focus-visible:ring-offset-0"
               onChange={(e) => {
                 setValues({ ...values, description: e.target.value });
               }}
             />
           </div>
           <div className="flex w-full flex-col gap-2.5">
-            <label className="text-base text-normal leading-[22px] text-dark-1">
+            <label className="text-base text-normal leading-[22px] text-black">
               Select Date and Time
             </label>
             <ReactDatePicker
@@ -133,7 +139,7 @@ const MeetingTypeList = () => {
               timeIntervals={15}
               timeCaption="time"
               dateFormat="MMMM d, yyyy h.mm aa"
-              className="w-full rounded bg-slate-50 p-2 focus:outline-none"
+              className="w-full rounded bg-slate-100 p-2 focus:outline-none"
             />
           </div>
         </MeetingModal>
@@ -144,7 +150,7 @@ const MeetingTypeList = () => {
           title="Meeting Created"
           className="text-center"
           handleClick={() => {
-            navigator.clipboard.writeText(meetingLink)
+            navigator.clipboard.writeText(meetingLink);
             toast("Link Copied");
           }}
           imgPath="/icons/checked.svg"

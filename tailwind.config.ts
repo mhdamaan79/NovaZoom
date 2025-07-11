@@ -30,10 +30,13 @@ const config = {
           1: "#141619",
           2: "#2c2e3a",
           3: "#b3b4bd",
+          4: "#F8F8F8",
+          5: "#F5F5DC",
         },
         light: {
           1: "#F5F5F5",
           2: "#FBFBFB",
+          3: "#FDFCEF",
         },
         blue: {
           1: "#335CFF",
