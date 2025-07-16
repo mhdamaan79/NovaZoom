@@ -2,10 +2,11 @@
 
 import { useGetCalls } from "@/hooks/useGetCalls";
 import { Call, CallRecording } from "@stream-io/video-react-sdk";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "./Loader";
 import { useRouter } from "next/navigation";
 import MeetingCard from "./MeetingCard";
+import { toast } from "sonner";
 
 const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
   const router = useRouter();
@@ -38,6 +39,28 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
         return "";
     }
   };
+
+  useEffect(() => {
+    const fetchRecordings = async () => {
+      try {
+        const callData = await Promise.all(
+          callRecordings?.map((meeting) => meeting.queryRecordings()) ?? []
+        );
+
+        const recordings = callData
+          .filter((call) => call.recordings.length > 0)
+          .flatMap((call) => call.recordings);
+
+        setRecordings(recordings);
+      } catch (error) {
+        toast("Try again later");
+      }
+    };
+
+    if (type === "recordings") {
+      fetchRecordings();
+    }
+  }, [type, callRecordings]);
 
   if (isLoading) return <Loader />;
 
@@ -82,7 +105,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
           />
         ))
       ) : (
-        <h1 className="text-2xl font-bold text-white">{noCallsMessage}</h1>
+        <h1 className="text-2xl font-bold text-dark-5">{noCallsMessage}</h1>
       )}
     </div>
   );
