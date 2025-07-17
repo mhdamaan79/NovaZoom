@@ -13,7 +13,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <section className="sticky left-0 top-0 flex flex-col justify-between w-fit h-screen bg-light-2 p-6 pt-28 text-white max-sm:hidden lg:w-[264px]">
+    <section className="sticky left-0 top-0 flex flex-col justify-between w-fit h-screen bg-dark-1 p-6 pt-28 text-white max-sm:hidden lg:w-[264px]">
       <div className="flex flex-1 flex-col gap-6">
         {sidebarLinks.map((link) => {
           const isActive =
@@ -26,7 +26,7 @@ const Sidebar = () => {
               className={cn(
                 "flex flex-row items-center justify-start px-4 py-7 rounded-lg cursor-pointer",
                 {
-                  "bg-blue-1 border-4 border-gray-200 drop-shadow-lg": isActive,
+                  "bg-blue-1  drop-shadow-lg": isActive,
                 }
               )}
             >
@@ -40,11 +40,11 @@ const Sidebar = () => {
                   alt={link.label}
                   width={24}
                   height={24}
-                  className={`filter ${isActive ? "" : "invert"}`}
+                  // className={`filter ${isActive ? "" : "invert"}`}
                 />
                 <p
-                  className="text-lg font-semibold ml-2"
-                  style={{ color: isActive ? "#FFFFFF" : "#030711" }}
+                  className="text-lg font-semibold ml-2 #FFFFFF"
+                  // style={{ color: isActive ? "#FFFFFF" : "#030711" }}
                 >
                   {link.label}
                 </p>

@@ -34,6 +34,12 @@ const config = {
           4: "#F8F8F8",
           5: "#F5F5DC",
         },
+        greyish: {
+          1: "#27374D",
+          2: "#526D82",
+          3: "#9DB2BF",
+          4: "#DDE6ED",
+        },
         light: {
           1: "#F5F5F5",
           2: "#FBFBFB",

@@ -105,7 +105,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
           />
         ))
       ) : (
-        <h1 className="text-2xl font-bold text-dark-5">{noCallsMessage}</h1>
+        <h1 className="text-2xl font-bold text-light-1">{noCallsMessage}</h1>
       )}
     </div>
   );

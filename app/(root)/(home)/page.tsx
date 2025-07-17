@@ -21,10 +21,12 @@ const Home = () => {
           </h2>
 
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-extrabold lg:text-7xl text-white">
+            <h1 className="text-4xl font-extrabold lg:text-7xl text-white drop-shadow-lg">
               {time}
             </h1>
-            <p className="text-lg font-medium text-white lg:text-2xl">{date}</p>
+            <p className="text-lg font-medium text-white lg:text-2xl drop-shadow-md">
+              {date}
+            </p>
           </div>
         </div>
       </div>

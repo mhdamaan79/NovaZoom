@@ -65,8 +65,17 @@
 
 /* ==== clerk class override ===== */
 
-.cl-userButtonPopoverActionButtonIcon {
-  color: white;
+/* Force Clerk UserButton popover and action text to always be white */
+.cl-userButtonPopoverActionButton,
+.cl-userButtonPopoverActionButtonIcon,
+.cl-userButtonPopoverActionButton:hover,
+.cl-userButtonPopoverActionButton:focus,
+.cl-userButtonPopoverActionButtonIcon:hover,
+.cl-userButtonPopoverActionButtonIcon:focus,
+.cl-internal-wkkub3,
+.cl-internal-wkkub3:hover,
+.cl-internal-wkkub3:focus {
+  color: #fff !important;
 }
 
 .cl-logoBox {
@@ -79,13 +88,6 @@
 
 .cl-socialButtonsIconButton {
   border: 3px solid #565761;
-}
-
-.cl-internal-wkkub3 {
-  color: white;
-}
-.cl-userButtonPopoverActionButton {
-  color: white;
 }
 
 .cl-logoImage {
