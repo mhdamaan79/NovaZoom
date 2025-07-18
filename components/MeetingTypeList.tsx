@@ -88,24 +88,24 @@ const MeetingTypeList = () => {
         className="bg-orange-gradient"
       />
       <HomeCard
-        imgPath="/icons/schedule.svg"
-        title="Schedule Meeting"
-        description="Plan your meeting"
-        handleClick={() => setMeetingState("isScheduleMeeting")}
-        className="bg-blue-gradient"
-      />
-      <HomeCard
-        imgPath="/icons/recordings.svg"
-        title="View Recordings"
-        description="Check out your recordings"
-        handleClick={() => router.push("/recordings")}
-        className="bg-purple-gradient"
-      />
-      <HomeCard
         imgPath="/icons/join-meeting.svg"
         title="Join Meeting"
         description="Via invitation link"
         handleClick={() => setMeetingState("isJoiningMeeting")}
+        className="bg-blue-gradient"
+      />
+      <HomeCard
+        imgPath="/icons/schedule.svg"
+        title="Schedule Meeting"
+        description="Plan your meeting"
+        handleClick={() => setMeetingState("isScheduleMeeting")}
+        className="bg-purple-gradient"
+      />
+      <HomeCard
+        imgPath="/icons/recordings.svg"
+        title="View Recordings"
+        description="Meeting Recordings"
+        handleClick={() => router.push("/recordings")}
         className="bg-yellow-gradient"
       />
 
@@ -117,18 +117,18 @@ const MeetingTypeList = () => {
           handleClick={createMeeting}
         >
           <div className="flex flex-col gap-2.5">
-            <label className="text-base text-normal leading-[22px] text-black">
+            <label className="text-base text-normal leading-[22px] text-white">
               Add a description
             </label>
             <Textarea
-              className="border-none bg-slate-100 focus-visible:ring-0 focus-visible:ring-offset-0"
+              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
               onChange={(e) => {
                 setValues({ ...values, description: e.target.value });
               }}
             />
           </div>
-          <div className="flex w-full flex-col gap-2.5">
-            <label className="text-base text-normal leading-[22px] text-black">
+          <div className="flex w-full flex-col gap-2.5 text-white">
+            <label className="text-base text-normal leading-[22px]">
               Select Date and Time
             </label>
             <ReactDatePicker
@@ -139,7 +139,7 @@ const MeetingTypeList = () => {
               timeIntervals={15}
               timeCaption="time"
               dateFormat="MMMM d, yyyy h.mm aa"
-              className="w-full rounded bg-slate-100 p-2 focus:outline-none"
+              className="w-full rounded bg-dark-3 p-2 focus:outline-none"
             />
           </div>
         </MeetingModal>

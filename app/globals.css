@@ -18,6 +18,11 @@
   box-sizing: border-box;
 }
 
+.toaster {
+  --normal-bg: #1c1f2e !important;
+  --normal-text: #fff !important;
+}
+
 /* ======== stream css overrides ======== */
 .str-video__call-stats {
   max-width: 500px;
