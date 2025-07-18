@@ -92,10 +92,14 @@ const config = {
       },
       backgroundImage: {
         hero: "url('/images/hero-background.png')",
-        'orange-gradient': 'radial-gradient(circle 500px, #FFA774 0%, #FF742E 40%, #FF742E10 100%)',
-        'purple-gradient': 'radial-gradient(circle 500px, #B37BFA 0%, #830EF9 40%, #830EF910 100%)',
-        'yellow-gradient': 'radial-gradient(circle 500px, #FFD96C 0%, #F9A90E 40%, #F9A90E10 100%)',
-        'blue-gradient': 'radial-gradient(circle 500px, #80A2FF 0%, #335CFF 40%, #335CFF10 100%)',
+        "orange-gradient":
+          "radial-gradient(circle 500px, #FFA774 0%, #FF742E 40%, #FF742E10 100%)",
+        "purple-gradient":
+          "radial-gradient(circle 500px, #B37BFA 0%, #830EF9 40%, #830EF910 100%)",
+        "yellow-gradient":
+          "radial-gradient(circle 500px, #FFD96C 0%, #F9A90E 40%, #F9A90E10 100%)",
+        "blue-gradient":
+          "radial-gradient(circle 500px, #80A2FF 0%, #335CFF 40%, #335CFF10 100%)",
       },
     },
   },

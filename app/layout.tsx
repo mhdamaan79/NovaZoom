@@ -26,7 +26,7 @@ export default function RootLayout({
     <ClerkProvider
       appearance={{
         layout: {
-          logoImageUrl: "/icons/novazoom-logo.svg",
+          logoImageUrl: "/icons/novazoom-logo.png",
           socialButtonsVariant: "iconButton",
         },
         variables: {

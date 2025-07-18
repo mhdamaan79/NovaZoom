@@ -25,23 +25,23 @@ const MobileNav = () => {
             width={28}
             height={28}
             alt="hamburger icon"
-            className="cursor-pointer sm:hidden bg-blue-1 hover:bg-blue-2 rounded-full p-1 transition-colors duration-200"
+            className="cursor-pointer sm:hidden bg-dark-2 hover:bg-dark-3 rounded-full p-1 transition-colors duration-200"
           />
         </SheetTrigger>
-        <SheetContent side="left" className="border-none bg-white-1">
+        <SheetContent side="left" className="border-none bg-dark-1 py-4 pl-6">
           <Link href="/" className="flex items-center gap-1">
             <Image
               src="/icons/logo.png"
               width={64}
               height={64}
               alt="novazoom logo"
-              className="w-24 -ml-5 -mr-6"
+              className="w-12  mr-1"
             />
             <p className="text-[26px] font-extrabold text-white">NOVAZOOM</p>
           </Link>
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
             <SheetClose asChild>
-              <section className=" flex h-full flex-col gap-6 pt-16 text-white">
+              <section className="flex h-full flex-col gap-6 pt-16 text-white">
                 {sidebarLinks.map((item) => {
                   const isActive = pathname === item.route;
 
