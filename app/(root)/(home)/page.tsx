@@ -13,10 +13,10 @@ const Home = () => {
   );
 
   return (
-    <section className="flex flex-col size-full gap-10 text-white">
+    <section className="flex flex-col size-full gap-5 text-white">
       <div className="h-[300px] w-full rounded-[20px] bg-hero bg-cover bg-right">
         <div className="flex flex-col h-full justify-between max-md:px-5 max-md:py-8 lg:p-11 lg:pr-20">
-          <h2 className="glassmorphism max-w-[270px] rounded py-2 text-center text-base font-normal text-white">
+          <h2 className="glassmorphism max-w-[273px] rounded py-2 text-center text-base font-normal text-white">
             Upcoming Meeting at: 12:30 PM
           </h2>
 
