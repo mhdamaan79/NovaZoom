@@ -35,13 +35,13 @@ const MobileNav = () => {
               width={64}
               height={64}
               alt="novazoom logo"
-              className="w-12  mr-1"
+              className="w-10 mr-1"
             />
             <p className="text-[26px] font-extrabold text-white">NOVAZOOM</p>
           </Link>
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
             <SheetClose asChild>
-              <section className="flex h-full flex-col gap-6 pt-16 text-white">
+              <section className="flex h-full flex-col gap-6 pt-4 text-white">
                 {sidebarLinks.map((item) => {
                   const isActive = pathname === item.route;
 

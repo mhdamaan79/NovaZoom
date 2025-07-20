@@ -13,7 +13,7 @@ const Navbar = () => {
           width={64}
           height={64}
           alt="NovaZoom Logo"
-          className="w-10 sm:w-12 sm:mr-1 lg:-ml-4"
+          className="w-10 lg:w-12 sm:mr-1 sm:ml-2 lg:-ml-2"
         />
         <p className="text-[30px] font-extrabold text-white max-sm:hidden">
           NovaZoom
