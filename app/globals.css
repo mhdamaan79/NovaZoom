@@ -101,6 +101,15 @@
   max-width: 120% !important;
   display: block;
 }
+
+.cl-socialButtonsIconButton__google {
+  background-color: #fff !important; /* Your desired color */
+  color: #fff !important; /* Optional: ensure icon/text is white */
+}
+
+.cl-socialButtonsIconButton__google:hover {
+  background-color: #f6f6f6 !important;
+}
 /* =============================== */
 
 @layer utilities {
