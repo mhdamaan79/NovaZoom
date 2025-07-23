@@ -1,3 +1,5 @@
+<img width="1918" height="937" alt="NovaZoom" src="https://github.com/user-attachments/assets/ae5657b8-a93e-4abe-9e48-804dc9294592" />
+
 # <img src="./public/icons/logo.png" alt="NovaZoom Logo" width="28" style="vertical-align: middle;" /> NovaZoom – Advanced Video Conferencing Application
 
 NovaZoom is a modern, full-featured video conferencing application built with the latest web technologies.  
