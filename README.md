@@ -23,7 +23,12 @@ It replicates core Zoom functionalities such as secure authentication, real-time
 - **Frontend** → Next.js, TypeScript, Tailwind CSS  
 - **Authentication** → Clerk  
 - **Video & Real-time Infrastructure** → Stream  
-- **UI Components** → shadcn/ui  
+- **UI Components** → shadcn/ui
+
+## ✦ Demo Credentials
+
+- Email : guest@novazoom.dev
+- Password : guest@novazoom.dev
 
 ## ✦ Live Demo
 
